@@ -23,8 +23,7 @@ namespace MySQL_DataSearch.Forms
             //make header draggable
             bunifuFormDock1.SubscribeControlToDragEvents(pnlHeader);
             bunifuFormDock1.SubscribeControlToDragEvents(lblTitle);
-
-         
+            grid.MouseWheel += new MouseEventHandler(grid_MouseWheel);
 
         }
 
@@ -75,6 +74,23 @@ namespace MySQL_DataSearch.Forms
             }
 
 
+        }
+
+        void grid_MouseWheel(object sender, MouseEventArgs e)
+        {
+            int currentIndex = this.grid.FirstDisplayedScrollingRowIndex;
+            int scrollLines = SystemInformation.MouseWheelScrollLines;
+
+            if (e.Delta > 0)
+            {
+                this.grid.FirstDisplayedScrollingRowIndex
+                    = Math.Max(0, currentIndex - scrollLines);
+            }
+            else if (e.Delta < 0)
+            {
+                this.grid.FirstDisplayedScrollingRowIndex
+                    = currentIndex + scrollLines;
+            }
         }
 
 
@@ -180,5 +196,7 @@ namespace MySQL_DataSearch.Forms
         {
 
         }
+
+
     }
 }

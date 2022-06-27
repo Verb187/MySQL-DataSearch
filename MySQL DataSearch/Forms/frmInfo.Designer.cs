@@ -259,9 +259,9 @@
             // 
             // bunifuFormDock2
             // 
-            this.bunifuFormDock2.AllowFormDragging = true;
-            this.bunifuFormDock2.AllowFormDropShadow = true;
-            this.bunifuFormDock2.AllowFormResizing = true;
+            this.bunifuFormDock2.AllowFormDragging = false;
+            this.bunifuFormDock2.AllowFormDropShadow = false;
+            this.bunifuFormDock2.AllowFormResizing = false;
             this.bunifuFormDock2.AllowHidingBottomRegion = true;
             this.bunifuFormDock2.AllowOpacityChangesWhileDragging = false;
             this.bunifuFormDock2.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
@@ -299,8 +299,7 @@
             // 
             // frmInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(408, 304);
             this.Controls.Add(this.pnlHeader);
@@ -321,8 +320,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInfo";
-            this.Text = "frmInfo";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Text = "Information";
             this.Load += new System.EventHandler(this.frmInfo_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

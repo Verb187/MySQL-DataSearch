@@ -216,3 +216,4 @@ C:\Users\SDO\Desktop\MySQL DataSearch\MySQL DataSearch\obj\Debug\MySQL DataSearc
 C:\Users\SDO\Desktop\MySQL DataSearch\MySQL DataSearch\obj\Debug\MySQL DataSearch.exe
 C:\Users\SDO\Desktop\MySQL DataSearch\MySQL DataSearch\obj\Debug\MySQL DataSearch.pdb
 C:\Users\SDO\Desktop\MySQL DataSearch\MySQL DataSearch\obj\Debug\MySQL_DataSearch.Forms.frmInfo.resources
+C:\Users\SDO\Desktop\MySQL DataSearch\MySQL DataSearch\obj\Debug\MySQL_DataSearch.Forms.frmLogin.resources

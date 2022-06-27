@@ -15,7 +15,7 @@ namespace MySQL_DataSearch
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.frmMain());
+            Application.Run(new Forms.frmLogin());
         }
     }
 }
