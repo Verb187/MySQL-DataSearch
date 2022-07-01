@@ -212,6 +212,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\DBcontext.cs" />
     <Compile Include="DataAccess\Employee.cs" />
+    <Compile Include="Event\User.cs" />
     <Compile Include="Forms\frmInfo.cs">
       <SubType>Form</SubType>
     </Compile>
